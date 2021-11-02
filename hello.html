@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <canvas width="600" height="600"></canvas> <!--creates a white board which we will be drawing on-->
+        
+        <script>
+            let canvas = document.querySelector('canvas'); //grabbing our canvas element to draw on
+            let context = canvas.getContext('2d'); //this is the area within the canvas where we will be drawing, in this case, we will create 2d drawings
+
+            context.fillRect(100, 100, 400, 400); //the numbers represent the x and y values it will atrt and end, in order to fill the resulting square created by those 2 points. 
+            //in this case, our first point will start 100px to the right and 100px down (withing the canvas), then the next point moves 400px to the right and 400px down from that 100x100 point
+            //since our canvas is 600x600px, our square is 300x300px and is centered in the canvas
+        </script>
+    </body>
+</html>
